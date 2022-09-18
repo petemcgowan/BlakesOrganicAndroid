@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentDashboardBinding
@@ -33,20 +34,25 @@ class DashboardFragment : Fragment(), BookClickListener {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        // this creates a vertical layout Manager
-        binding.recyclerview.layoutManager = LinearLayoutManager(activity)
-        // ArrayList of class ItemsViewModel
-        val data = ArrayList<ItemsViewModel>()
+        populateBooks()
 
-        // This loop will create 20 Views containing the image with the count of view
-        for (i in 1..20) {
-            data.add(ItemsViewModel(R.drawable.ic_dashboard_black_24dp, "Item " + i))
-        }
-        // This will pass the ArrayList to our Adapter
-        val adapter = CustomAdapter(data)
+        binding.recyclerview.layoutManager = GridLayoutManager(activity, 3)
 
-        // Setting the Adapter with the recyclerview
-        binding.recyclerview.adapter = adapter
+
+//        // this creates a vertical layout Manager
+//        binding.recyclerview.layoutManager = LinearLayoutManager(activity)
+//        // ArrayList of class ItemsViewModel
+//        val data = ArrayList<ItemsViewModel>()
+//        // This loop will create 20 Views containing the image with the count of view
+//        for (i in 1..20) {
+//            data.add(ItemsViewModel(R.drawable.ic_dashboard_black_24dp, "Item " + i))
+//        }
+//        // This will pass the ArrayList to our Adapter
+//        val adapter = CustomAdapter(data)
+//        // Setting the Adapter with the recyclerview
+//        binding.recyclerview.adapter = adapter
+
+        binding.recyclerview.adapter = CardAdapter(bookList, this)
 
 
         return root
