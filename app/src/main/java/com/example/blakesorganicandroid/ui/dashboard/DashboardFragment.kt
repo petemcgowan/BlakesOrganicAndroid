@@ -1,5 +1,6 @@
 package com.example.blakesorganicandroid.ui.dashboard
 
+import CustomAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentDashboardBinding
 import com.example.blakesorganicandroid.ui.*
@@ -31,10 +33,22 @@ class DashboardFragment : Fragment(), BookClickListener {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        // this creates a vertical layout Manager
+        binding.recyclerview.layoutManager = LinearLayoutManager(activity)
+        // ArrayList of class ItemsViewModel
+        val data = ArrayList<ItemsViewModel>()
+
+        // This loop will create 20 Views containing the image with the count of view
+        for (i in 1..20) {
+            data.add(ItemsViewModel(R.drawable.ic_dashboard_black_24dp, "Item " + i))
         }
+        // This will pass the ArrayList to our Adapter
+        val adapter = CustomAdapter(data)
+
+        // Setting the Adapter with the recyclerview
+        binding.recyclerview.adapter = adapter
+
+
         return root
     }
 
