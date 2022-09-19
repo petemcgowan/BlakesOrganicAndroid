@@ -34,7 +34,8 @@ class ContactUsFragment : Fragment(), BookClickListener {
         _binding = FragmentContactUsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        populateContactUs()
+        if (contactUsList.size == 0)
+            populateContactUs()
 
         binding.recyclerview.layoutManager = GridLayoutManager(activity, 4)
         binding.recyclerview.adapter = CardAdapter(contactUsList, this)
@@ -88,11 +89,6 @@ class ContactUsFragment : Fragment(), BookClickListener {
             "IT ENDS WITH US",
             "",
         )
-        contactUsList.add(book4)
-
-        contactUsList.add(book1)
-        contactUsList.add(book2)
-        contactUsList.add(book3)
         contactUsList.add(book4)
     }
 
