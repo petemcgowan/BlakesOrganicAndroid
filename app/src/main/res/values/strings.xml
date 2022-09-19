@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">BlakesOrganicAndroid</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_contact_us">Contact Us</string>
+    <string name="title_history">History</string>
+    <string name="title_products">Products</string>
+    <string name="title_faq">FAQ</string>
     <string name="cover">Cover</string>
     <string name="title_place_holder">Title Place Holder</string>
     <string name="author_placeholder">Author PlaceHolder</string>
