@@ -1,6 +1,9 @@
 package com.example.blakesorganicandroid.ui
 
 var bookList = mutableListOf<Book>()
+var contactUsList = mutableListOf<Book>()
+var historyList = mutableListOf<Book>()
+var faqList = mutableListOf<Book>()
 
 val BOOK_ID_EXTRA = "bookExtra"
 
