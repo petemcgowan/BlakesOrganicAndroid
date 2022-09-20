@@ -37,7 +37,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         if (historyList.size == 0)
           populateHistory()
 
-        binding.recyclerview.layoutManager = GridLayoutManager(activity, 2)
+        binding.recyclerview.layoutManager = GridLayoutManager(activity, 1)
         binding.recyclerview.adapter = CardAdapter(historyList, this)
 
 
@@ -58,7 +58,7 @@ class HistoryFragment : Fragment(), BookClickListener {
     private fun populateHistory()
     {
         val book1 = Book(
-            R.drawable._50ml_kefir_550x825,
+            R.drawable.history_lough_leitrim_blue,
             "Victoria Devine",
             "The company is focused only on certified Organic produce.",
             "Blake’s Always Organic is based in The Food Hub, Drumshanbo, Co. Leitrim since 2012",
@@ -67,7 +67,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         historyList.add(book1)
 
         val book2 = Book(
-            R.drawable.__coffee_packs_side_by_side,
+            R.drawable.history_lough_leitrim_boardwalk,
             "Amanda Lohrey",
             "Sean McGloin became aware of the health benefits of the fermented milk kefir and was making kefir for his family before developing the product on a small commercial scale.",
             "Our current products are Organic Kefir, (a probiotic health drink for gut revitalisation made with whole organic milk.) and Whole-bean Artisan Organic coffees.\n",
@@ -76,7 +76,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         historyList.add(book2)
 
         val book3 = Book(
-            R.drawable.back_of_coffee_high_res_blakes_organic,
+            R.drawable.history_lough_leitrim_small,
             "M. Scott Peck",
             "Hundreds of years ago kefir was found high in the Caucasus mountains villages of nomadic shepherds who had abnormally good health.",
             "Kefir originates in the Caucasus mountains.",
@@ -85,7 +85,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         historyList.add(book3)
 
         val book4 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.history_glencar_waterfall,
             "Colleen Hoover",
             "On further research, they discovered that part of the diet was a milk product that was stored in bags or containers made from calf stomachs.",
             "While half the world was dying of malnutrition and disease, these shepherds and their families lived long healthy lives with little or no disease.",

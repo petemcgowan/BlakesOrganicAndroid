@@ -31,7 +31,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         if (productList.size == 0)
           populateProducts()
 
-        binding.recyclerview.layoutManager = GridLayoutManager(activity, 3)
+        binding.recyclerview.layoutManager = GridLayoutManager(activity, 2)
         binding.recyclerview.adapter = CardAdapter(productList, this)
 
         return root
@@ -53,7 +53,7 @@ class ProductsFragment : Fragment(), BookClickListener {
     {
 
         val product1 = Book(
-            R.drawable._50ml_kefir_550x825,
+            R.drawable.product_50ml_kefir,
             "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg", // 3rd line (author)
             "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg",  // 2nd line (Title)
             "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg", // longer description (the Detail activity)
@@ -62,7 +62,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         productList.add(product1)
 
         val product2 = Book(
-            R.drawable.__coffee_packs_side_by_side,
+            R.drawable.product_coffee_packs_side_by_side,
             "Blakes Culture Blend: Organic Whole Bean Coffee 250g",
             "Blakes Culture Blend: Organic Whole Bean Coffee 250g",
             "Blakes Culture Blend: Organic Whole Bean Coffee 250g\n",
@@ -71,7 +71,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         productList.add(product2)
 
         val product3 = Book(
-            R.drawable.back_of_coffee_high_res_blakes_organic,
+            R.drawable.product_purely_arabica_back,
             "Purely Arabica Blend Organic Whole Bean Coffee Catering Pack 1Kg",
             "Purely Arabica Blend Organic Whole Bean Coffee Catering Pack 1Kg",
             "Purely Arabica Blend Organic Whole Bean Coffee Catering Pack 1Kg",
@@ -80,7 +80,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         productList.add(product3)
 
         val product4 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.product_culture_catering_pack_1kg,
             "Purely Arabica: Organic Whole Bean Coffee 250g",
             "Purely Arabica: Organic Whole Bean Coffee 250g",
             "'Purely Arabica: Organic Whole Bean Coffee 250g\n" + "\n" + "Purely Arabica: Organic Whole Bean Coffee 250g\n" + "\n" + "Purely Arabica: Organic Whole Bean Coffee 250g\n",
@@ -89,7 +89,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         productList.add(product4)
 
         val product5 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.product_culture_catering_pack_1kg,
             "750 ml Blakes Organic Milk Kefir -Natural",
             "750 ml Blakes Organic Milk Kefir -Natural",
             "750 ml Blakes Organic Milk Kefir -Natural",
@@ -98,7 +98,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         productList.add(product5)
 
         val product6 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.product_culture_catering_pack_1kg,
             "250 ml Blakes Organic Milk Kefir -Natural flavour- Six bottle pack",
             "250 ml Blakes Organic Milk Kefir -Natural flavour- Six bottle pack",
             "250 ml Blakes Organic Milk Kefir -Natural flavour- Six bottle pack",
@@ -107,7 +107,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         productList.add(product6)
 
         val product7 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.product_culture_catering_pack_1kg,
             "250 ml Blakes Organic Milk Kefir -Natural",
             "250 ml Blakes Organic Milk Kefir -Natural",
             "250 ml Blakes Organic Milk Kefir -Natural\n",
