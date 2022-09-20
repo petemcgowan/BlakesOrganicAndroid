@@ -24,6 +24,12 @@
         tools:layout="@layout/fragment_faq" />
 
     <fragment
+        android:id="@+id/navigation_benefits"
+        android:name="com.example.blakesorganicandroid.ui.benefits.BenefitsFragment"
+        android:label="@string/title_benefits"
+        tools:layout="@layout/fragment_benefits" />
+
+    <fragment
         android:id="@+id/navigation_contact_us"
         android:name="com.example.blakesorganicandroid.ui.contactus.ContactUsFragment"
         android:label="@string/title_contact_us"

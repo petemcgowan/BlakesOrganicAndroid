@@ -29,7 +29,7 @@ class ContactUsFragment : Fragment(), BookClickListener {
         savedInstanceState: Bundle?
     ): View {
 //        val contactUsViewModel =
-//            ViewModelProvider(this).get(ContactUsViewModel::class.java)
+//            ViewModelProvider(this).get(BenefitsViewModel::class.java)
 
         _binding = FragmentContactUsBinding.inflate(inflater, container, false)
         val root: View = binding.root
