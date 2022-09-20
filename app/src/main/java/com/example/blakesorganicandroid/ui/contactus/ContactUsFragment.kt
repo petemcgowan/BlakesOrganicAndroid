@@ -60,7 +60,8 @@ class ContactUsFragment : Fragment(), BookClickListener {
             R.drawable.abtm,
             "Unit 3, The Food Hub\n",
             "Carricknabrack\n",
-            "Description not needed?"
+            "Description not needed?",
+            "C1"
         )
         contactUsList.add(book1)
 
@@ -68,7 +69,8 @@ class ContactUsFragment : Fragment(), BookClickListener {
             R.drawable.tmom,
             "Blakes Always Organic Ltd.",
             "Drumshanbo\n",
-            ""
+            "",
+            "C2"
         )
         contactUsList.add(book2)
 
@@ -79,7 +81,8 @@ class ContactUsFragment : Fragment(), BookClickListener {
                     "Co. Leitrim\n" +
                     "N41 HY67\n" +
                     "Ireland",
-            ""
+            "",
+            "C3"
         )
         contactUsList.add(book3)
 
@@ -88,8 +91,8 @@ class ContactUsFragment : Fragment(), BookClickListener {
             "Colleen Hoover",
             "IT ENDS WITH US",
             "",
+            "C4"
         )
         contactUsList.add(book4)
     }
-
 }

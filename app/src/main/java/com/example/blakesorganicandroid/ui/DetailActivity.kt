@@ -14,8 +14,8 @@ class DetailActivity : AppCompatActivity()
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bookID = intent.getIntExtra(BOOK_ID_EXTRA, -1)
-        val book = bookFromID(bookID)
+        val productID = intent.getStringExtra(BOOK_ID_EXTRA)
+        val book = productID?.let { bookFromID(it) }
         if(book != null)
         {
             binding.cover.setImageResource(book.cover)
@@ -25,11 +25,11 @@ class DetailActivity : AppCompatActivity()
         }
     }
 
-    private fun bookFromID(bookID: Int): Book?
+    private fun bookFromID(productID: String): Book?
     {
-        for(book in bookList)
+        for(book in productList)
         {
-            if(book.id == bookID)
+            if(book.id == productID)
                 return book
         }
         return null

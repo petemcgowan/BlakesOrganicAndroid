@@ -29,7 +29,8 @@ class FaqFragment : Fragment(), BookClickListener {
         _binding = FragmentFaqBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        populateFaq()
+        if (faqList.size == 0)
+          populateFaq()
 
         binding.recyclerview.layoutManager = GridLayoutManager(activity, 1)
         binding.recyclerview.adapter = CardAdapter(faqList, this)
@@ -54,7 +55,8 @@ class FaqFragment : Fragment(), BookClickListener {
             R.drawable.faq_kefir_in_a_fridge_looking_cool,
             "Generally, we have found that the recommended daily amount is around 100 grams per day, so half of one of our 250g bottles of Blakes ‘Feel Good’ Kefir should be fine, but you might find it beneficial to start on a third of the bottle to allow your gut to acclimatize to the kefir for the first few days.",
             "How much Kefir should I take?",
-            "Generally, we have found that the recommended daily amount is around 100 grams per day, so half of one of our 250g bottles of Blakes ‘Feel Good’ Kefir should be fine, but you might find it beneficial to start on a third of the bottle to allow your gut to acclimatize to the kefir for the first few days."
+            "Generally, we have found that the recommended daily amount is around 100 grams per day, so half of one of our 250g bottles of Blakes ‘Feel Good’ Kefir should be fine, but you might find it beneficial to start on a third of the bottle to allow your gut to acclimatize to the kefir for the first few days.",
+            "F1"
         )
         faqList.add(faq1)
 
@@ -62,7 +64,8 @@ class FaqFragment : Fragment(), BookClickListener {
             R.drawable.faq_sexy_kefir,
             "Yes. The Kefir bottles are made from P.E.T. plastic and fully recyclable, as is the lid. Our coffee pouches are also recyclable, and we hope to introduce compostable/biodegradable coffee pouches in the near future.",
             "Are your wrappers/labels and bottles recyclable?",
-            "Yes. The Kefir bottles are made from P.E.T. plastic and fully recyclable, as is the lid. Our coffee pouches are also recyclable, and we hope to introduce compostable/biodegradable coffee pouches in the near future."
+            "Yes. The Kefir bottles are made from P.E.T. plastic and fully recyclable, as is the lid. Our coffee pouches are also recyclable, and we hope to introduce compostable/biodegradable coffee pouches in the near future.",
+            "F2"
         )
         faqList.add(faq2)
 
@@ -72,7 +75,8 @@ class FaqFragment : Fragment(), BookClickListener {
                     "        Alternatively, why not soak some porridge oats overnight in kefir for a healthy creamy breakfast?",
             "How do you drink your Kefir?",
             "The kefir can be consumed straight from the bottle. Some people may find the taste a bit sharp for their pallet, and if that is the case, you can make a smoothie or add a little fruit juice to sweeten up the kefir. We would recommend that you do this shortly before consumption, however, as the kefir may begin to ferment again from the natural sugars in the fruit. (This is referred to as Double Fermentation and is perfectly natural, but it may affect the flavour and consistency, if left out of a chilled environment for even a short period of time).\n" +
-                    "        Alternatively, why not soak some porridge oats overnight in kefir for a healthy creamy breakfast?"
+                    "        Alternatively, why not soak some porridge oats overnight in kefir for a healthy creamy breakfast?",
+            "F3"
         )
         faqList.add(faq3)
 
@@ -93,6 +97,7 @@ class FaqFragment : Fragment(), BookClickListener {
                     "If you find that it has separated slightly, simply shake the bottle before consumption.\n" +
                     "\n" +
                     "*Alternatively , you can allow the kefir to seperate fully into curds and whey, and drain off the watery whey into a cloth covered sieve using some muslin (or a clean tea towel will do). The curds you have left will make a delicious cream cheese (try adding some wild garlic, green onions, or chives to make it even tastier.)",
+            "F4"
         )
         faqList.add(faq4)
     }
