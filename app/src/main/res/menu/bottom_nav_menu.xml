@@ -17,11 +17,11 @@
         android:title="@string/title_faq" />
     <item
         android:id="@+id/navigation_benefits"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_baseline_ac_unit_24"
         android:title="@string/title_benefits" />
     <item
         android:id="@+id/navigation_contact_us"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_baseline_email_24"
         android:title="@string/title_contact_us" />
 
 </menu>
