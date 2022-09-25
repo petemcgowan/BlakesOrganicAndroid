@@ -20,8 +20,8 @@
         android:icon="@drawable/ic_baseline_thumb_up_24"
         android:title="@string/title_benefits" />
     <item
-        android:id="@+id/navigation_contact_us"
-        android:icon="@drawable/ic_baseline_email_24"
-        android:title="@string/title_contact_us" />
+        android:id="@+id/navigation_stockists"
+        android:icon="@drawable/ic_baseline_store_24"
+        android:title="@string/title_stockists" />
 
 </menu>
