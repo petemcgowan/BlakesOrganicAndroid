@@ -44,7 +44,7 @@ class ProductsFragment : Fragment(), BookClickListener {
 
     override fun onClick(book: Book)
     {
-        val intent = Intent(activity, DetailActivity::class.java)
+        val intent = Intent(activity, ProductDetailActivity::class.java)
         intent.putExtra(BOOK_ID_EXTRA, book.id)
         startActivity(intent)
     }
@@ -54,7 +54,7 @@ class ProductsFragment : Fragment(), BookClickListener {
 
         val product1 = Book(
             R.drawable.product_50ml_kefir,
-            "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg", // 3rd line (author)
+            "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg", // 3rd line (longDescription)
             "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg",  // 2nd line (Title)
             "Blakes Culture Blend Organic Whole Bean Coffee Catering Pack 1Kg", // longer description (the Detail activity)
             "P1"

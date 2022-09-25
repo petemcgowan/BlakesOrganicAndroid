@@ -55,7 +55,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
     {
         val benefit1 = Book(
             R.drawable.benefit1_kefir_nutrients,
-            "author",
+            "longDescription",
             "Kefir is a fantastic source of many nutrients",
             "Kefir originated from parts of Eastern Europe and Southwest Asia. Its name comes from the Turkish word “keyif,” which refers to feeling good after eating.\n" +
                     "\n" +
@@ -89,7 +89,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit2 = Book(
             R.drawable.benefit2_probiotics_gut_microbiome,
-            "author",
+            "longDescription",
             "Kefir is a more powerful probiotic than yogurt",
             "Some microorganisms can have beneficial effects on health when ingested.\n" +
                     "\n" +
@@ -109,7 +109,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit3 = Book(
             R.drawable.benefit3_bacteria_allv1,
-            "author",
+            "longDescription",
             "Kefir has potent antibacterial properties\n",
             "Certain probiotics in kefir are believed to protect against infections.\n" +
                     "\n" +
@@ -127,7 +127,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit4 = Book(
             R.drawable.benefit4_healthy_bones_skeleton,
-            "author",
+            "longDescription",
             "Kefir can improve bone health and lower the risk of osteoporosis",
             "Osteoporosis is characterized by deterioration of bone tissue and is a major concern in Western countries. It is especially common among older women and dramatically raises the risk of fractures.\n" +
                     "It is, however, more probable that what kefir can do is that it can heal the gut and in turn a healthy gut can ward of many diseases.\n" +
@@ -141,7 +141,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit5 = Book(
             R.drawable.benefit5_cancer_anti_oxidant_fermentation,
-            "author",
+            "longDescription",
             "Kefir may be protective against cancer",
             "Cancer is one of the world’s leading causes of death. It occurs when abnormal cells in your body grow uncontrollably, such as in a tumor.\n" +
                     "\n" +
@@ -161,7 +161,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit6 = Book(
             R.drawable.benefit6_good_digestive_system,
-            "author",
+            "longDescription",
             "Kefir’s probiotics may help with various digestive concerns",
             "Probiotics such as kefir can help restore the balance of friendly bacteria in your gut.\n" +
                     "\n" +
@@ -181,7 +181,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit7 = Book(
             R.drawable.benefit7_cow_low_lactose,
-            "author",
+            "longDescription",
             "Kefir is low in lactose",
             "Regular dairy foods contain a natural sugar called lactose.\n" +
                     "\n" +
@@ -203,7 +203,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
         val benefit8 = Book(
             R.drawable.benefit8_asthma_great_lungs,
-            "author",
+            "longDescription",
             "Kefir may improve allergy and asthma symptoms",
             "Allergic reactions are caused by inflammatory responses against certain foods or substances.\n" +
                     "\n" +

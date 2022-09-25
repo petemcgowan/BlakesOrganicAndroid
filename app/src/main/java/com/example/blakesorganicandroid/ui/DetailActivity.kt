@@ -21,7 +21,7 @@ class DetailActivity : AppCompatActivity()
             binding.cover.setImageResource(book.cover)
             binding.title.text = book.title
             binding.description.text = book.description
-            binding.author.text = book.author
+            binding.longDescription.text = book.longDescription
         }
     }
 

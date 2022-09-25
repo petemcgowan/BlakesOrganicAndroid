@@ -13,7 +13,7 @@ class CardViewHolder(
     {
         cardCellBinding.cover.setImageResource(book.cover)
         cardCellBinding.title.text = book.title
-        cardCellBinding.author.text = book.author
+        cardCellBinding.longDescription.text = book.longDescription
 
         cardCellBinding.cardView.setOnClickListener{
             clickListener.onClick(book)

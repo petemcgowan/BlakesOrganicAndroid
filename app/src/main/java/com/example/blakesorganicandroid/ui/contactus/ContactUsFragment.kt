@@ -49,7 +49,7 @@ class ContactUsFragment : Fragment(), BookClickListener {
 
     override fun onClick(book: Book)
     {
-        val intent = Intent(activity, DetailActivity::class.java)
+        val intent = Intent(activity, MapsActivity::class.java)
         intent.putExtra(BOOK_ID_EXTRA, book.id)
         startActivity(intent)
     }

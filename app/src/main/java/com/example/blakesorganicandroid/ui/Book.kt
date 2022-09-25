@@ -10,7 +10,7 @@ val BOOK_ID_EXTRA = "bookExtra"
 
 class Book(
     var cover: Int,
-    var author: String,
+    var longDescription: String,
     var title: String,
     var description: String,
     val id: String
