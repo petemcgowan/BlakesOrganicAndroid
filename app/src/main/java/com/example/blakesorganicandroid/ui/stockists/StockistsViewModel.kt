@@ -1,13 +1,13 @@
-package com.example.blakesorganicandroid.ui.contactus
+package com.example.blakesorganicandroid.ui.stockists
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ContactUsViewModel : ViewModel() {
+class StockistsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Contact Us Fragment"
+        value = "This is Stockists Fragment"
     }
     val text: LiveData<String> = _text
 }
