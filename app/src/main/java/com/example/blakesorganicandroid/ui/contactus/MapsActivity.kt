@@ -41,11 +41,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+        // Add stockist location marker
         val navenny = LatLng(54.800091165954456, -7.782440186615055)
         mMap.addMarker(MarkerOptions().position(navenny).title("Navenny Shopping Centre"))
+
+        val shopStGalway = LatLng(53.324722735026704, -9.068437264395666)
+        mMap.addMarker(MarkerOptions().position(shopStGalway).title("Shop St Galway"))
+
+        // Move the camera
         mMap.moveCamera(CameraUpdateFactory.newLatLng(navenny))
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(5f))
     }
 }
