@@ -39,6 +39,9 @@
             android:name=".ui.products.ProductDetailActivity"
             android:exported="true" />
         <activity
+            android:name=".ui.benefits.BenefitDetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

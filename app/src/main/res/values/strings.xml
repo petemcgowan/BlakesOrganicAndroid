@@ -7,7 +7,8 @@
     <string name="title_faq">FAQ</string>
     <string name="cover">Cover</string>
     <string name="title_place_holder">Title Place Holder</string>
-    <string name="longDescription_placeholder">Long Description PlaceHolder</string>
+    <string name="detail_long_description_placeholder">Detail Long Description PlaceHolder</string>
+    <string name="long_description_placeholder">Long Description PlaceHolder</string>
     <string name="description_placeholder">description PlaceHolder</string>
     <string name="title_activity_maps">MapsActivity</string>
 </resources>
