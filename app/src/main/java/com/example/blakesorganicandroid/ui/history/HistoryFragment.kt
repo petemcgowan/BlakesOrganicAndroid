@@ -58,9 +58,9 @@ class HistoryFragment : Fragment(), BookClickListener {
     private fun populateHistory()
     {
         val book1 = Book(
-            R.drawable.history_lough_leitrim_blue,
-            "Blake’s Always Organic is based in The Food Hub, Drumshanbo, Co. Leitrim since 2012",
+            R.drawable.history_organic_coffee_beans,
             "The company is focused only on certified Organic produce.",
+            "Blake’s Always Organic is based in The Food Hub, Drumshanbo, Co. Leitrim since 2012",
             "Desc",
             "H1"
         )
@@ -94,7 +94,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         historyList.add(book4)
 
         val book5 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.history_sheep_shepard,
             "As temperatures rose the natural bacteria in the wall of the calf’s stomach bag impregnated the milk causing fermentation resulting in billions of good bacteria that was regular drank by the shepherds to achieve good health.",
             "In 2016, Blakes Always Organic commenced selling “Feel Good” Organic Kefir.",
             "Desc",
@@ -103,7 +103,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         historyList.add(book5)
 
         val book6 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.history_wooden_850_vat,
             "Starting off, we made batches of kefir in a small 20 litre Bain Marie, which we bottled and labelled by hand.",
             "We had to move to a 200 litre vat within 3 months and in 2018 we had to purchase a 850 litre vat.",
             "Desc",
@@ -112,7 +112,7 @@ class HistoryFragment : Fragment(), BookClickListener {
         historyList.add(book6)
 
         val book7 = Book(
-            R.drawable.blakes_culture_blend_organic_whole_bean_coffee_catering_pack_1kg,
+            R.drawable.kefir_in_fridge_blakes_organic,
             "We currently produce around 1600 litres per week. The product proved to be very popular with our health conscious customers.\n",
             "Three years later, and our production scale has grown continuously to cater for the increasing demand as the undisputed health benefits of milk kefir is the main driver of sales.",
             "Desc",
