@@ -31,16 +31,19 @@
         <activity
             android:name=".ui.stockists.MapsActivity"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:label="Stockist Locations" />
         <activity
             android:name=".ui.DetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label=""/>
         <activity
             android:name=".ui.products.ProductDetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Product Details"/>
         <activity
             android:name=".ui.benefits.BenefitDetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="More Info"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
