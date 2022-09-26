@@ -6,14 +6,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentBenefitsBinding
 import com.example.blakesorganicandroid.ui.*
+
 
 class BenefitsFragment : Fragment(), BookClickListener {
 
@@ -46,7 +44,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
 
     override fun onClick(book: Book)
     {
-        val intent = Intent(activity, DetailActivity::class.java)
+        val intent = Intent(activity, BenefitDetailActivity::class.java)
         intent.putExtra(BOOK_ID_EXTRA, book.id)
         startActivity(intent)
     }
