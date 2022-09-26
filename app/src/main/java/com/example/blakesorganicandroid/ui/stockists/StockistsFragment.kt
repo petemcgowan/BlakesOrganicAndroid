@@ -60,25 +60,25 @@ class StockistsFragment : Fragment(), BookClickListener {
         )
         stockistsList.add(stockistCafeRua)
 
-        // McCambridges, Galway
-        val stockistMcCambridges = Book(
-            R.drawable.stockist_mc_cambridges_galway,
-            "38/39 Shop Street, Galway",  // address
-            "McCambridges, Galway",   // name of stockist
+        // Morton's, Ranelagh, Dublin
+        val mortonsRanelagh = Book(
+            R.drawable.stockist_mortons_ranelagh,
+            "Ranelagh, Dublin",  // address
+            "Morton's",   // name of stockist
             "desc", //
-            "S2"
+            "S23"
         )
-        stockistsList.add(stockistMcCambridges)
+        stockistsList.add(mortonsRanelagh)
 
-        // Fresh, Carrick On Shannon
-        val stockistFreshCarrick = Book(
-            R.drawable.stockist_fresh_carrick,
-            "7 Landmark Court, Carrick On Shannon",  // address
-            "Fresh, Carrick",   // name of stockist
+        // Donnybrook Fair, Dublin 4
+        val donnybrookFairDublin = Book(
+            R.drawable.stockist_donnybrook_fair,
+            "89 Morehampton Rd, Dublin 4",  // address
+            "Donnybrook Fair, Dublin 4",   // name of stockist
             "desc", //
-            "S3"
+            "S4"
         )
-        stockistsList.add(stockistFreshCarrick)
+        stockistsList.add(donnybrookFairDublin)
 
         // Shannon Fruit, Tullyvarraga
         val stockistCosgroveSligo = Book(
@@ -180,15 +180,15 @@ class StockistsFragment : Fragment(), BookClickListener {
         )
         stockistsList.add(freshIfsc)
 
-        // Donnybrook Fair, Dublin 4
-        val donnybrookFairDublin = Book(
-            R.drawable.stockist_donnybrook_fair,
-            "89 Morehampton Rd, Dublin 4",  // address
-            "Donnybrook Fair, Dublin 4",   // name of stockist
+        // Fresh, Carrick On Shannon
+        val stockistFreshCarrick = Book(
+            R.drawable.stockist_fresh_carrick,
+            "7 Landmark Court, Carrick On Shannon",  // address
+            "Fresh, Carrick",   // name of stockist
             "desc", //
-            "S4"
+            "S3"
         )
-        stockistsList.add(donnybrookFairDublin)
+        stockistsList.add(stockistFreshCarrick)
 
         // Georges Fish Store, Stepaside
         val georgeFishStore = Book(
@@ -270,15 +270,17 @@ class StockistsFragment : Fragment(), BookClickListener {
         )
         stockistsList.add(freshSmithfield)
 
-        // Morton's, Ranelagh, Dublin
-        val mortonsRanelagh = Book(
-            R.drawable.stockist_mortons_ranelagh,
-            "Ranelagh, Dublin",  // address
-            "Morton's",   // name of stockist
+        // McCambridges, Galway
+        val stockistMcCambridges = Book(
+            R.drawable.stockist_mc_cambridges_galway,
+            "38/39 Shop Street, Galway",  // address
+            "McCambridges, Galway",   // name of stockist
             "desc", //
-            "S23"
+            "S2"
         )
-        stockistsList.add(mortonsRanelagh)
+        stockistsList.add(stockistMcCambridges)
+
+
     }
 }
 
