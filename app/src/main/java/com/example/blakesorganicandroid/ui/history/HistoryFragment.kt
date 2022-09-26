@@ -50,9 +50,9 @@ class HistoryFragment : Fragment(), BookClickListener {
 
     override fun onClick(book: Book)
     {
-        val intent = Intent( activity, DetailActivity::class.java)
-        intent.putExtra(BOOK_ID_EXTRA, book.id)
-        startActivity(intent)
+//        val intent = Intent( activity, DetailActivity::class.java)
+//        intent.putExtra(BOOK_ID_EXTRA, book.id)
+//        startActivity(intent)
     }
 
     private fun populateHistory()

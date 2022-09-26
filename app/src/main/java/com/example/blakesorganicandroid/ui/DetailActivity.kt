@@ -20,8 +20,7 @@ class DetailActivity : AppCompatActivity()
         {
             binding.cover.setImageResource(book.cover)
             binding.title.text = book.title
-            binding.description.text = book.description
-            binding.longDescription.text = book.longDescription
+            binding.detailLongDescription.text = book.longDescription
         }
     }
 
