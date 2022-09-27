@@ -47,13 +47,16 @@ class ProductsFragment : Fragment(), BookClickListener {
         val intent = Intent(activity, ProductDetailActivity::class.java)
         intent.putExtra(BOOK_ID_EXTRA, book.id)
         startActivity(intent)
-    }
+    }   
 
     private fun populateProducts()
     {
         val product1 = Book(
             R.drawable.product_sheebeg_cheese,
-            "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n",
+            "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" + "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" +
+                    "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" +
+                    "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" +
+                    "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n",
             "Sheebeg Cheese", // longer description (the Detail activity)
             "desc",
             "P1"
