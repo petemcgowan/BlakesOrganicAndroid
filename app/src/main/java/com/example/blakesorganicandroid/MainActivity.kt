@@ -1,35 +1,43 @@
 package com.example.blakesorganicandroid
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.os.Handler
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.blakesorganicandroid.databinding.ActivityMainBinding
+import com.example.blakesorganicandroid.MainActivity2
+import com.example.blakesorganicandroid.R
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        val navView: BottomNavigationView = binding.navView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_history, R.id.navigation_products, R.id.navigation_faq, R.id.navigation_benefits, R.id.navigation_stockists,
-            )
+        // on below line we are configuring
+        // our window to full screen
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        setContentView(R.layout.activity_main)
+
+        // on below line we are calling
+        // handler to run a task
+        // for specific time interval
+        Handler().postDelayed({
+            // on below line we are
+            // creating a new intent
+            val i = Intent(
+                this@MainActivity,
+                MainActivity2::class.java
+            )
+            // on below line we are
+            // starting a new activity.
+            startActivity(i)
+
+            // on the below line we are finishing
+            // our current activity.
+            finish()
+        }, 2000)
     }
 }
