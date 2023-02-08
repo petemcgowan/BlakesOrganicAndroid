@@ -3,8 +3,8 @@ package com.example.blakesorganicandroid.ui.products
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.blakesorganicandroid.databinding.ActivityDetailBinding
-import com.example.blakesorganicandroid.ui.BOOK_ID_EXTRA
-import com.example.blakesorganicandroid.ui.Book
+import com.example.blakesorganicandroid.ui.ITEM_ID_EXTRA
+import com.example.blakesorganicandroid.ui.Item
 import com.example.blakesorganicandroid.ui.productList
 
 class ProductDetailActivity : AppCompatActivity()
@@ -17,7 +17,7 @@ class ProductDetailActivity : AppCompatActivity()
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val productID = intent.getStringExtra(BOOK_ID_EXTRA)
+        val productID = intent.getStringExtra(ITEM_ID_EXTRA)
         val product = productID?.let { productFromID(it) }
         if(product != null)
         {
@@ -27,7 +27,7 @@ class ProductDetailActivity : AppCompatActivity()
         }
     }
 
-    private fun productFromID(productID: String): Book?
+    private fun productFromID(productID: String): Item?
     {
         for(product in productList)
         {

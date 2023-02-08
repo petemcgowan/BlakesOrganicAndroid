@@ -12,7 +12,7 @@ import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentProductsBinding
 import com.example.blakesorganicandroid.ui.*
 
-class ProductsFragment : Fragment(), BookClickListener {
+class ProductsFragment : Fragment(), ItemClickListener {
 
     private var _binding: FragmentProductsBinding? = null
 
@@ -42,16 +42,16 @@ class ProductsFragment : Fragment(), BookClickListener {
         _binding = null
     }
 
-    override fun onClick(book: Book)
+    override fun onClick(book: Item)
     {
         val intent = Intent(activity, ProductDetailActivity::class.java)
-        intent.putExtra(BOOK_ID_EXTRA, book.id)
+        intent.putExtra(ITEM_ID_EXTRA, book.id)
         startActivity(intent)
     }   
 
     private fun populateProducts()
     {
-        val product1 = Book(
+        val product1 = Item(
             R.drawable.product_sheebeg_cheese,
             "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" + "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" +
                     "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n" +
@@ -63,7 +63,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         )
         productList.add(product1)
 
-        val product2 = Book(
+        val product2 = Item(
             R.drawable.product_coffee_packs_side_by_side,
             "Culture Blend is a blend of three Organic coffee beans designed to give our coffee a nice body, with low acidity, and a hint of sweetness. The main bean variety we use is an Arabica bean from Indonesia: Sumatra Mandheling Raja Gayo : The King of the Gayo Mountain. This gives our blend a nice smooth body. To this we add some Peruvian Arabica: HB Grade One, which gives our blend its sweetness and a hint of fruitiness. Then we add a small amount of a quality Asian Robusta for that extra kick of caffeine.\n" +
                     "\n" +
@@ -76,7 +76,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         )
         productList.add(product2)
 
-        val product3 = Book(
+        val product3 = Item(
             R.drawable.organic_pure_decaf_high_res_blakes_organic,
             "Our Peru CO2 Decaf is made from only Peruvian 100% Organic Arabica coffee beans, using the CO2 decaffeination process. This process uses carbon dioxide to extract almost all of the caffeine from the beans without extracting the rich flavours that are found within the Peruvian Arabica coffee, (rather than being soaked out and then put back in as they do in both the indirect solvent or Swiss Water decaffeination processes).\n" +
                     "\n" +
@@ -87,7 +87,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         )
         productList.add(product3)
 
-        val product4 = Book(
+        val product4 = Item(
             R.drawable.product_purely_arabica_back,
             "Feedback we received from coffee lovers indicated a demand for a blend with a milder caffeine boost. We investigated mixing decaffeinated beans with arabica beans to give a refreshing taste with less kick, but the composition of the decaffeinated coffee beans proved unworkable. We then experimented with South American beans, using the fruity, well-balanced Peruvian Arabica hard beans, blended with a rich flavoured Colombian Excelso Arabica. By not adding any Robusta to the blend, we reduced the caffeine kick.  The result is a mild, yet full-flavoured blend: A perfect after-dinner coffee.",
             "Purely Arabica",
@@ -96,7 +96,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         )
         productList.add(product4)
 
-        val product5 = Book(
+        val product5 = Item(
             R.drawable.faq_how_do_you_drink_your_kefir,
             "Kefir is a yoghurt style drink, exceptionally rich in nutrients and probiotics, aiding digestion and providing excellent gut health.\n" +
                     "\n" +
@@ -107,7 +107,7 @@ class ProductsFragment : Fragment(), BookClickListener {
         )
         productList.add(product5)
 
-        val product6 = Book(
+        val product6 = Item(
             R.drawable.kefir_in_a_fridge_looking_cool,
             "A 1 cup serving of low fat kefir contains:\n" +
                     "\n" +

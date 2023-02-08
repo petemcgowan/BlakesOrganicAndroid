@@ -3,8 +3,9 @@ package com.example.blakesorganicandroid.ui.benefits
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.blakesorganicandroid.databinding.ActivityDetailBinding
-import com.example.blakesorganicandroid.ui.BOOK_ID_EXTRA
-import com.example.blakesorganicandroid.ui.Book
+import com.example.blakesorganicandroid.ui.ITEM_ID_EXTRA
+import com.example.blakesorganicandroid.ui.DetailActivity
+import com.example.blakesorganicandroid.ui.Item
 import com.example.blakesorganicandroid.ui.benefitsList
 
 
@@ -18,7 +19,7 @@ class BenefitDetailActivity : AppCompatActivity()
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val benefitID = intent.getStringExtra(BOOK_ID_EXTRA)
+        val benefitID = intent.getStringExtra(ITEM_ID_EXTRA)
         val benefit = benefitID?.let { benefitFromID(it) }
         if(benefit != null)
         {
@@ -28,7 +29,7 @@ class BenefitDetailActivity : AppCompatActivity()
         }
     }
 
-    private fun benefitFromID(benefitID: String): Book?
+    private fun benefitFromID(benefitID: String): Item?
     {
         for(benefit in benefitsList)
         {

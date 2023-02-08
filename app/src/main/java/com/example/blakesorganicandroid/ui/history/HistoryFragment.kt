@@ -1,6 +1,6 @@
 package com.example.blakesorganicandroid.ui.history
 
-import CustomAdapter
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,7 +15,7 @@ import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentHistoryBinding
 import com.example.blakesorganicandroid.ui.*
 
-class HistoryFragment : Fragment(), BookClickListener {
+class HistoryFragment : Fragment(), ItemClickListener {
 
     private var _binding: FragmentHistoryBinding? = null
 
@@ -48,16 +48,17 @@ class HistoryFragment : Fragment(), BookClickListener {
         _binding = null
     }
 
-    override fun onClick(book: Book)
+    override fun onClick(book: Item)
     {
 //        val intent = Intent( activity, DetailActivity::class.java)
-//        intent.putExtra(BOOK_ID_EXTRA, book.id)
+//        intent.putExtra(ITEM_ID_EXTRA, book.id)
 //        startActivity(intent)
     }
 
     private fun populateHistory()
     {
-        val book1 = Book(
+        val book1 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.history_organic_coffee_beans,
             "The company is focused only on certified Organic produce.",
             "Blake’s Always Organic is based in The Food Hub, Drumshanbo, Co. Leitrim since 2012",
@@ -66,7 +67,8 @@ class HistoryFragment : Fragment(), BookClickListener {
         )
         historyList.add(book1)
 
-        val book2 = Book(
+        val book2 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.history_lough_leitrim_boardwalk,
             "Our current products are Organic Kefir, (a probiotic health drink for gut revitalisation made with whole organic milk.) and Whole-bean Artisan Organic coffees.\n",
             "Sean McGloin became aware of the health benefits of the fermented milk kefir and was making kefir for his family before developing the product on a small commercial scale.",
@@ -75,7 +77,8 @@ class HistoryFragment : Fragment(), BookClickListener {
         )
         historyList.add(book2)
 
-        val book3 = Book(
+        val book3 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.history_lough_leitrim_small,
             "Kefir originates in the Caucasus mountains.",
             "Hundreds of years ago kefir was found high in the Caucasus mountains villages of nomadic shepherds who had abnormally good health.",
@@ -84,7 +87,8 @@ class HistoryFragment : Fragment(), BookClickListener {
         )
         historyList.add(book3)
 
-        val book4 = Book(
+        val book4 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.history_glencar_waterfall,
             "While half the world was dying of malnutrition and disease, these shepherds and their families lived long healthy lives with little or no disease.",
             "On further research, they discovered that part of the diet was a milk product that was stored in bags or containers made from calf stomachs.",
@@ -93,7 +97,8 @@ class HistoryFragment : Fragment(), BookClickListener {
         )
         historyList.add(book4)
 
-        val book5 = Book(
+        val book5 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.history_sheep_shepard,
             "As temperatures rose the natural bacteria in the wall of the calf’s stomach bag impregnated the milk causing fermentation resulting in billions of good bacteria that was regular drank by the shepherds to achieve good health.",
             "In 2016, Blakes Always Organic commenced selling “Feel Good” Organic Kefir.",
@@ -102,7 +107,8 @@ class HistoryFragment : Fragment(), BookClickListener {
         )
         historyList.add(book5)
 
-        val book6 = Book(
+        val book6 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.history_wooden_850_vat,
             "Starting off, we made batches of kefir in a small 20 litre Bain Marie, which we bottled and labelled by hand.",
             "We had to move to a 200 litre vat within 3 months and in 2018 we had to purchase a 850 litre vat.",
@@ -111,7 +117,8 @@ class HistoryFragment : Fragment(), BookClickListener {
         )
         historyList.add(book6)
 
-        val book7 = Book(
+        val book7 = Item(
+//            R.drawable.benefit3_bacteria_allv1,
             R.drawable.kefir_in_fridge_blakes_organic,
             "We currently produce around 1600 litres per week. The product proved to be very popular with our health conscious customers.\n",
             "Three years later, and our production scale has grown continuously to cater for the increasing demand as the undisputed health benefits of milk kefir is the main driver of sales.",

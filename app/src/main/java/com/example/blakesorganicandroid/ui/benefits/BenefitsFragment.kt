@@ -1,6 +1,6 @@
 package com.example.blakesorganicandroid.ui.benefits
 
-import CustomAdapter
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,7 +13,7 @@ import com.example.blakesorganicandroid.databinding.FragmentBenefitsBinding
 import com.example.blakesorganicandroid.ui.*
 
 
-class BenefitsFragment : Fragment(), BookClickListener {
+class BenefitsFragment : Fragment(), ItemClickListener {
 
     private var _binding: FragmentBenefitsBinding? = null
 
@@ -42,16 +42,16 @@ class BenefitsFragment : Fragment(), BookClickListener {
         _binding = null
     }
 
-    override fun onClick(book: Book)
+    override fun onClick(book: Item)
     {
         val intent = Intent(activity, BenefitDetailActivity::class.java)
-        intent.putExtra(BOOK_ID_EXTRA, book.id)
+        intent.putExtra(ITEM_ID_EXTRA, book.id)
         startActivity(intent)
     }
 
     private fun populateBenefits()
     {
-        val benefit1 = Book(
+        val benefit1 = Item(
             R.drawable.benefit1_kefir_nutrients,
             "Kefir originated from parts of Eastern Europe and Southwest Asia. Its name comes from the Turkish word “keyif,” which refers to feeling good after eating.\n" +
                     "\n" +
@@ -110,7 +110,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit1)
 
-        val benefit2 = Book(
+        val benefit2 = Item(
             R.drawable.benefit2_probiotics_gut_microbiome,
             "Some microorganisms can have beneficial effects on health when ingested.\n" +
                     "\n" +
@@ -141,7 +141,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit2)
 
-        val benefit3 = Book(
+        val benefit3 = Item(
             R.drawable.benefit3_bacteria_allv1,
             "Certain probiotics in kefir are believed to protect against infections.\n" +
                     "\n" +
@@ -168,7 +168,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit3)
 
-        val benefit4 = Book(
+        val benefit4 = Item(
             R.drawable.benefit4_healthy_bones_skeleton,
             "Osteoporosis is characterized by deterioration of bone tissue and is a major concern in Western countries. It is especially common among older women and dramatically raises the risk of fractures.\n" +
                     "It is, however, more probable that what kefir can do is that it can heal the gut and in turn a healthy gut can ward of many diseases.\n" +
@@ -187,7 +187,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit4)
 
-        val benefit5 = Book(
+        val benefit5 = Item(
             R.drawable.benefit5_cancer_anti_oxidant_fermentation,
             "Cancer is one of the world’s leading causes of death. It occurs when abnormal cells in your body grow uncontrollably, such as in a tumor.\n" +
                     "\n" +
@@ -218,7 +218,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit5)
 
-        val benefit6 = Book(
+        val benefit6 = Item(
             R.drawable.benefit6_good_digestive_system,
             "Probiotics such as kefir can help restore the balance of friendly bacteria in your gut.\n" +
                     "\n" +
@@ -249,7 +249,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit6)
 
-        val benefit7 = Book(
+        val benefit7 = Item(
             R.drawable.benefit7_cow_low_lactose,
             "Regular dairy foods contain a natural sugar called lactose.\n" +
                     "\n" +
@@ -284,7 +284,7 @@ class BenefitsFragment : Fragment(), BookClickListener {
         )
         benefitsList.add(benefit7)
 
-        val benefit8 = Book(
+        val benefit8 = Item(
             R.drawable.benefit8_asthma_great_lungs,
             "Allergic reactions are caused by inflammatory responses against certain foods or substances.\n" +
                     "\n" +

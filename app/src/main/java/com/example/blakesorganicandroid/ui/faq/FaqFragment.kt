@@ -13,7 +13,7 @@ import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentFaqBinding
 import com.example.blakesorganicandroid.ui.*
 
-class FaqFragment : Fragment(), BookClickListener {
+class FaqFragment : Fragment(), ItemClickListener {
 
     private var _binding: FragmentFaqBinding? = null
 
@@ -42,16 +42,16 @@ class FaqFragment : Fragment(), BookClickListener {
         _binding = null
     }
 
-    override fun onClick(book: Book)
+    override fun onClick(book: Item)
     {
 //        val intent = Intent( activity, DetailActivity::class.java)
-//        intent.putExtra(BOOK_ID_EXTRA, book.id)
+//        intent.putExtra(ITEM_ID_EXTRA, book.id)
 //        startActivity(intent)
     }
 
     private fun populateFaq()
     {
-        val faq1 = Book(
+        val faq1 = Item(
             R.drawable.faq_kefir_in_a_fridge_looking_cool,
             "Generally, we have found that the recommended daily amount is around 100 grams per day, so half of one of our 250g bottles of Blakes ‘Feel Good’ Kefir should be fine, but you might find it beneficial to start on a third of the bottle to allow your gut to acclimatize to the kefir for the first few days.",
             "How much Kefir should I take?",
@@ -60,7 +60,7 @@ class FaqFragment : Fragment(), BookClickListener {
         )
         faqList.add(faq1)
 
-        val faq2 = Book(
+        val faq2 = Item(
             R.drawable.faq_sexy_kefir,
             "Yes. The Kefir bottles are made from P.E.T. plastic and fully recyclable, as is the lid. Our coffee pouches are also recyclable, and we hope to introduce compostable/biodegradable coffee pouches in the near future.",
             "Are your wrappers/labels and bottles recyclable?",
@@ -69,7 +69,7 @@ class FaqFragment : Fragment(), BookClickListener {
         )
         faqList.add(faq2)
 
-        val faq3 = Book(
+        val faq3 = Item(
             R.drawable.faq_how_do_you_drink_your_kefir,
             "The kefir can be consumed straight from the bottle. Some people may find the taste a bit sharp for their pallet, and if that is the case, you can make a smoothie or add a little fruit juice to sweeten up the kefir. We would recommend that you do this shortly before consumption, however, as the kefir may begin to ferment again from the natural sugars in the fruit. (This is referred to as Double Fermentation and is perfectly natural, but it may affect the flavour and consistency, if left out of a chilled environment for even a short period of time).\n" +
                     "        Alternatively, why not soak some porridge oats overnight in kefir for a healthy creamy breakfast?",
@@ -80,7 +80,7 @@ class FaqFragment : Fragment(), BookClickListener {
         )
         faqList.add(faq3)
 
-        val faq4 = Book(
+        val faq4 = Item(
             R.drawable.faq_kefir_fermentation,
             "Our Kefir is a live product, and will continue to ferment, especially if the temperature of the product goes over 5 degrees Centigrade. It can, therefore, be prone to separation into ‘curds’ and ‘whey’. The pH level will also be slightly sharper if this happens.\n" +
                     "\n" +
