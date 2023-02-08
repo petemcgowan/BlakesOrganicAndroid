@@ -33,10 +33,6 @@
             android:exported="false"
             android:label="Stockist Locations" />
         <activity
-            android:name=".ui.DetailActivity"
-            android:exported="true"
-            android:label="" />
-        <activity
             android:name=".ui.products.ProductDetailActivity"
             android:exported="true"
             android:label="Product Details" />
