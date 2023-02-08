@@ -14,7 +14,7 @@ class DetailActivity : AppCompatActivity()
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val productID = intent.getStringExtra(BOOK_ID_EXTRA)
+        val productID = intent.getStringExtra(ITEM_ID_EXTRA)
         val book = productID?.let { bookFromID(it) }
         if(book != null)
         {
@@ -24,7 +24,7 @@ class DetailActivity : AppCompatActivity()
         }
     }
 
-    private fun bookFromID(productID: String): Book?
+    private fun bookFromID(productID: String): Item?
     {
         for(book in productList)
         {
