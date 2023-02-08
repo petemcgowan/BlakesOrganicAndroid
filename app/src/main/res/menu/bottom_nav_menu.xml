@@ -14,7 +14,8 @@
     <item
         android:id="@+id/navigation_faq"
         android:icon="@drawable/ic_baseline_info_24"
-        android:title="@string/title_faq" />
+        android:title="@string/title_faq"
+        android:visible="true" />
     <item
         android:id="@+id/navigation_benefits"
         android:icon="@drawable/ic_baseline_thumb_up_24"

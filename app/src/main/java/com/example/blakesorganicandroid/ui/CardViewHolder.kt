@@ -6,10 +6,10 @@ import com.example.blakesorganicandroid.databinding.CardCellBinding
 
 class CardViewHolder(
     private val cardCellBinding: CardCellBinding,
-    private val clickListener: BookClickListener
+    private val clickListener: ItemClickListener
 ) : RecyclerView.ViewHolder(cardCellBinding.root)
 {
-    fun bindBook(book: Book)
+    fun bindBook(book: Item)
     {
         cardCellBinding.cover.setImageResource(book.cover)
         cardCellBinding.title.text = book.title

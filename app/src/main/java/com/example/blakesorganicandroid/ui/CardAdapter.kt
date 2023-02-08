@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.blakesorganicandroid.databinding.CardCellBinding
 
 class CardAdapter(
-    private val books: List<Book>,
-    private val clickListener: BookClickListener
+    private val books: List<Item>,
+    private val clickListener: ItemClickListener
     )
     : RecyclerView.Adapter<CardViewHolder>()
 {

@@ -9,8 +9,8 @@
     android:fillViewport="true"
     >
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:context=".ui.products.ProductsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -19,6 +19,6 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:itemCount="5"
-            tools:listitem="@layout/card_view_design" />
+            tools:listitem="@layout/card_cell" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
