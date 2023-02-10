@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.FragmentProductsBinding
 import com.example.blakesorganicandroid.ui.*
+import com.google.android.gms.maps.model.LatLng
 
 class ProductsFragment : Fragment(), ItemClickListener {
 
@@ -59,7 +59,8 @@ class ProductsFragment : Fragment(), ItemClickListener {
                     "Our Sheebeg Organic Raw Milk Irish made cheese is a strong cheddar type cheese, matured for 24-36 months here in The Food Hub, before being cut into 140g wedges for our customers\n",
             "Sheebeg Cheese", // longer description (the Detail activity)
             "desc",
-            "P1"
+            "P1",
+            LatLng(53.34946379011656, -6.278325172177447)
         )
         productList.add(product1)
 
@@ -72,7 +73,8 @@ class ProductsFragment : Fragment(), ItemClickListener {
                     "We hope that you enjoy our Culture Blend coffee as much as we do…",
             "Culture Blend",
             "Blakes Culture Blend: Organic Whole Bean Coffee 250g\n",
-            "P2"
+            "P2",
+            LatLng(53.34946379011656, -6.278325172177447)
         )
         productList.add(product2)
 
@@ -83,7 +85,8 @@ class ProductsFragment : Fragment(), ItemClickListener {
                     "We then roast our coffee beans in small batches in Co. Leitrim. The resulting coffee is a medium-bodied, well balanced nutty-flavoured coffee with mild acidity and a hint of citrus zest. The coffee performs well as either an espresso coffee or with milk added.",
             "Peru CO2 Decaf",
             "desc",
-            "P3"
+            "P3",
+            LatLng(53.34946379011656, -6.278325172177447)
         )
         productList.add(product3)
 
@@ -92,18 +95,20 @@ class ProductsFragment : Fragment(), ItemClickListener {
             "Feedback we received from coffee lovers indicated a demand for a blend with a milder caffeine boost. We investigated mixing decaffeinated beans with arabica beans to give a refreshing taste with less kick, but the composition of the decaffeinated coffee beans proved unworkable. We then experimented with South American beans, using the fruity, well-balanced Peruvian Arabica hard beans, blended with a rich flavoured Colombian Excelso Arabica. By not adding any Robusta to the blend, we reduced the caffeine kick.  The result is a mild, yet full-flavoured blend: A perfect after-dinner coffee.",
             "Purely Arabica",
             "'Purely Arabica: Organic Whole Bean Coffee 250g\n",
-            "P4"
+            "P4",
+            LatLng(53.34946379011656, -6.278325172177447)
         )
         productList.add(product4)
 
         val product5 = Item(
-            R.drawable.faq_how_do_you_drink_your_kefir,
+            R.drawable.product_how_do_you_drink_your_kefir,
             "Kefir is a yoghurt style drink, exceptionally rich in nutrients and probiotics, aiding digestion and providing excellent gut health.\n" +
                     "\n" +
                     "It is high in protein, calcium and vitamin D and tastes amazing too!",
             "Organic Milk Kefir",
             "750 ml and 250 ml Blakes Organic Milk Kefir -Natural",
-            "P5"
+            "P5",
+            LatLng(53.34946379011656, -6.278325172177447)
         )
         productList.add(product5)
 
@@ -125,7 +130,8 @@ class ProductsFragment : Fragment(), ItemClickListener {
                     "Dairy-free versions of kefir can be made with coconut water, coconut milk, or other sweet liquids. These will not have the same nutrient profile as dairy-based kefir.",
             "Kefir 6-Pack",
             "desc",
-            "P6"
+            "P6",
+            LatLng(53.34946379011656, -6.278325172177447)
         )
         productList.add(product6)
     }

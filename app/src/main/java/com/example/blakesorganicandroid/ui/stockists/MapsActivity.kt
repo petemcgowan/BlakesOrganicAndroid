@@ -1,10 +1,13 @@
 package com.example.blakesorganicandroid.ui.stockists
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.example.blakesorganicandroid.R
 import com.example.blakesorganicandroid.databinding.ActivityMapsBinding
-
+import com.example.blakesorganicandroid.ui.ITEM_ID_EXTRA
+import com.example.blakesorganicandroid.ui.Item
+import com.example.blakesorganicandroid.ui.stockistsList
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -16,6 +19,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
+    private lateinit var localStockist: Item;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,12 +27,31 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Pete's item retrieval Code
+        val stockistID = intent.getStringExtra(ITEM_ID_EXTRA)
+
+        Log.d("Stockists", stockistID.toString())
+        val stockist = stockistID?.let { stockistFromID(it) }
+        Log.d("Stockists", stockist.toString())
+        if (stockist != null) {
+            localStockist = stockist
+        };
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
 
+
+    private fun stockistFromID(productID: String): Item?
+    {
+        for(stockist in stockistsList)
+        {
+            if(stockist.id == productID)
+                return stockist
+        }
+        return null
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -40,6 +63,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+
 
         // Add stockist location markers...
 
@@ -135,9 +159,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val mortonsRanelagh = LatLng(53.32118879912855, -6.2561448351287225)
         mMap.addMarker(MarkerOptions().position(mortonsRanelagh).title("Morton's, Ranelagh, Dublin"))
 
-
+        val zoomLevel = 14.0f //This goes up to 21
+        Log.d ("localStockist:", localStockist.toString())
+        mMap.uiSettings.isZoomControlsEnabled = true
         // Move the camera
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(hopsackRathmines))
-        mMap.moveCamera(CameraUpdateFactory.zoomTo(5f))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localStockist.latLng, zoomLevel))
+//        mMap.moveCamera(CameraUpdateFactory.zoomTo(5f))
     }
 }
