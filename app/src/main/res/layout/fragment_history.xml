@@ -1,18 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/atn_off_white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/atn_off_white"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Instagram-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:textColor="@color/atn_off_white"
+            android:backgroundTint="@color/atn_lightorange"
+            android:background="@drawable/customborder"
+            android:id="@+id/igView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/igTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Follow us on Instagram"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></Space>
+                <ImageView
+                    android:id="@+id/igLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/cover"
+                    android:src="@drawable/instagram_mobile_icon"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></Space>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/igText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Follow us on Instagram and don't miss out on any moments."
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+        <!-- Facebook-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:backgroundTint="@color/atn_pink"
+            android:textColor="@color/atn_off_white"
+            android:background="@drawable/customborder"
+            android:id="@+id/fbView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/fbTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Join our community on Facebook"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></Space>
+                <ImageView
+                    android:id="@+id/fbLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="right"
+                    android:gravity="end"
+                    android:contentDescription="@string/cover"
+                    android:src="@drawable/facebook_logo"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></Space>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fbText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Like our Facebook page and keep up with all the latest news and updates"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <!-- Youtube or Website-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:backgroundTint="@color/atn_darkorange"
+            android:textColor="@color/atn_off_white"
+            android:background="@drawable/customborder"
+            android:id="@+id/wbView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/wbTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Explore our Website"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></Space>
+                <ImageView
+                    android:id="@+id/wbLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/cover"
+                    android:src="@mipmap/blakes_always_orgnic_logo_small_transparent"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></Space>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wbText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Order coffee and kefir online, bulk discounts available!"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
+        android:backgroundTint="@color/atn_off_white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:itemCount="8"
         tools:listitem="@layout/card_cell" />
-</ScrollView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
 
