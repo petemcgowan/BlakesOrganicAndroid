@@ -15,6 +15,10 @@
     <color name="atn_green_background2">#1e965a</color>
     <color name="atn_off_white">#e2d8c6</color>
     <color name="atn_blue">#1385B3</color>
+    <color name="atn_lightorange">#FC842D</color>
+    <color name="atn_darkorange">#FC6A28</color>
+    <color name="atn_pink">#FC6E8E</color>
+
 
     <color name="logo_brown_background1">#CA8D43</color>
     <color name="logo_brown_background2">#CB7444</color>

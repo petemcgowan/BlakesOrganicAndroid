@@ -9,12 +9,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
+        android:backgroundTint="@color/atn_off_white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
         android:clickable="true"
         app:cardElevation="7dp"
-       >
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/cover"
-                 />
+                />
 
             <TextView
                 android:id="@+id/title"
@@ -57,12 +58,3 @@
 
 </LinearLayout>
 
-<!--<LinearLayout-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--android:orientation="vertical">-->
-<!--</LinearLayout>-->
-
-<!-- From Cardview -->
-<!--    app:cardElevation="7dp"-->
-<!--    android:layout_margin="10dp"-->
