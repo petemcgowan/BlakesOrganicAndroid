@@ -1,9 +1,9 @@
-package com.example.blakesorganicandroid.ui
+package com.buachaillmaith.blakesorganicandroid.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.blakesorganicandroid.databinding.CardCellBinding
+import com.buachaillmaith.blakesorganicandroid.databinding.CardCellBinding
 
 class CardAdapter(
     private val books: List<Item>,

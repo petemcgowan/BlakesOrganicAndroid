@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid.ui
+package com.buachaillmaith.blakesorganicandroid.ui
 
 interface ItemClickListener
 {
