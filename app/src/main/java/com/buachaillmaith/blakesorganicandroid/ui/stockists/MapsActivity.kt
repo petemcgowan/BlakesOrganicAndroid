@@ -1,13 +1,13 @@
-package com.example.blakesorganicandroid.ui.stockists
+package com.buachaillmaith.blakesorganicandroid.ui.stockists
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.blakesorganicandroid.R
-import com.example.blakesorganicandroid.databinding.ActivityMapsBinding
-import com.example.blakesorganicandroid.ui.ITEM_ID_EXTRA
-import com.example.blakesorganicandroid.ui.Item
-import com.example.blakesorganicandroid.ui.stockistsList
+import com.buachaillmaith.blakesorganicandroid.R
+import com.buachaillmaith.blakesorganicandroid.databinding.ActivityMapsBinding
+import com.buachaillmaith.blakesorganicandroid.ui.ITEM_ID_EXTRA
+import com.buachaillmaith.blakesorganicandroid.ui.Item
+import com.buachaillmaith.blakesorganicandroid.ui.stockistsList
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
