@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid.ui.faq
+package com.buachaillmaith.blakesorganicandroid.ui.faq
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
