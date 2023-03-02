@@ -1,12 +1,12 @@
-package com.example.blakesorganicandroid
+package com.buachaillmaith.blakesorganicandroid
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.blakesorganicandroid.MainActivity2
-import com.example.blakesorganicandroid.R
+import com.buachaillmaith.blakesorganicandroid.MainActivity2
+import com.buachaillmaith.blakesorganicandroid.R
 
 class MainActivity : AppCompatActivity() {
 

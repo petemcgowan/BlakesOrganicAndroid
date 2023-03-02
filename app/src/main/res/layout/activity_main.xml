@@ -6,7 +6,7 @@
     android:id="@+id/idRLContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/atn_blue"
+    android:background="@color/kh_mauve"
     android:orientation="vertical"
     tools:context=".MainActivity">
 

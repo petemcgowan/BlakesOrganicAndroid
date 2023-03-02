@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.example.blakesorganicandroid.ui.history.HistoryFragment"
+        android:name="com.buachaillmaith.blakesorganicandroid.ui.history.HistoryFragment"
         android:label="@string/title_history"
         tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/navigation_products"
-        android:name="com.example.blakesorganicandroid.ui.products.ProductsFragment"
+        android:name="com.buachaillmaith.blakesorganicandroid.ui.products.ProductsFragment"
         android:label="@string/title_products"
         tools:layout="@layout/fragment_products" />
 
     <fragment
         android:id="@+id/navigation_faq"
-        android:name="com.example.blakesorganicandroid.ui.faq.FaqFragment"
+        android:name="com.buachaillmaith.blakesorganicandroid.ui.faq.FaqFragment"
         android:label="@string/title_faq"
         tools:layout="@layout/fragment_faq" />
 
     <fragment
         android:id="@+id/navigation_benefits"
-        android:name="com.example.blakesorganicandroid.ui.benefits.BenefitsFragment"
+        android:name="com.buachaillmaith.blakesorganicandroid.ui.benefits.BenefitsFragment"
         android:label="@string/title_benefits"
         tools:layout="@layout/fragment_benefits" />
 
     <fragment
         android:id="@+id/navigation_stockists"
-        android:name="com.example.blakesorganicandroid.ui.stockists.StockistsFragment"
+        android:name="com.buachaillmaith.blakesorganicandroid.ui.stockists.StockistsFragment"
         android:label="@string/title_stockists"
         tools:layout="@layout/fragment_stockists" />
 

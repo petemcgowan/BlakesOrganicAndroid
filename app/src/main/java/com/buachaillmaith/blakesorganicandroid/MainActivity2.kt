@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid
+package com.buachaillmaith.blakesorganicandroid
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.blakesorganicandroid.databinding.ActivityMain2Binding
+import com.buachaillmaith.blakesorganicandroid.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {
 
