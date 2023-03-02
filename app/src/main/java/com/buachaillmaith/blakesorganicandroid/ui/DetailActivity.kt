@@ -1,8 +1,8 @@
-package com.example.blakesorganicandroid.ui
+package com.buachaillmaith.blakesorganicandroid.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.blakesorganicandroid.databinding.ActivityDetailBinding
+import com.buachaillmaith.blakesorganicandroid.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity()
 {

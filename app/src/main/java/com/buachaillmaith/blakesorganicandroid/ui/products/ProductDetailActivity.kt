@@ -1,11 +1,11 @@
-package com.example.blakesorganicandroid.ui.products
+package com.buachaillmaith.blakesorganicandroid.ui.products
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.blakesorganicandroid.databinding.ActivityDetailBinding
-import com.example.blakesorganicandroid.ui.ITEM_ID_EXTRA
-import com.example.blakesorganicandroid.ui.Item
-import com.example.blakesorganicandroid.ui.productList
+import com.buachaillmaith.blakesorganicandroid.databinding.ActivityDetailBinding
+import com.buachaillmaith.blakesorganicandroid.ui.ITEM_ID_EXTRA
+import com.buachaillmaith.blakesorganicandroid.ui.Item
+import com.buachaillmaith.blakesorganicandroid.ui.productList
 
 class ProductDetailActivity : AppCompatActivity()
 {

@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid
+package com.buachaillmaith.blakesorganicandroid
 
 import org.junit.Test
 
