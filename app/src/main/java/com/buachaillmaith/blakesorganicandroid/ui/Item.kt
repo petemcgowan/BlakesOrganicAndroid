@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid.ui
+package com.buachaillmaith.blakesorganicandroid.ui
 
 import com.google.android.gms.maps.model.LatLng
 

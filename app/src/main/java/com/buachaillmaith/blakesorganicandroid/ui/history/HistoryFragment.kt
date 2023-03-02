@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid.ui.history
+package com.buachaillmaith.blakesorganicandroid.ui.history
 
 
 import android.content.Intent
@@ -12,9 +12,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.blakesorganicandroid.R
-import com.example.blakesorganicandroid.databinding.FragmentHistoryBinding
-import com.example.blakesorganicandroid.ui.*
+import com.buachaillmaith.blakesorganicandroid.R
+import com.buachaillmaith.blakesorganicandroid.databinding.FragmentHistoryBinding
+import com.buachaillmaith.blakesorganicandroid.ui.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.fragment_history.*
@@ -43,8 +43,8 @@ class HistoryFragment : Fragment(), ItemClickListener {
         if (historyList.size == 0)
           populateHistory()
 
-        binding.recyclerview.layoutManager = GridLayoutManager(activity, 1)
-        binding.recyclerview.adapter = CardAdapter(historyList, this)
+//        binding.recyclerview.layoutManager = GridLayoutManager(activity, 1)
+//        binding.recyclerview.adapter = CardAdapter(historyList, this)
 //        val fbView: View = binding.fbView
 //        Log.d("HistoryFragment fbView", fbView.toString())
         binding.fbView.setOnClickListener {

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Blakes Organic Coffee</string>
     <string name="title_stockists">Stockists</string>
-    <string name="title_history">History</string>
+    <string name="title_history">Blakes History</string>
     <string name="title_products">Products</string>
     <string name="title_benefits">Benefits</string>
     <string name="title_faq">FAQ</string>
@@ -11,4 +11,12 @@
     <string name="long_description_placeholder">Long Description PlaceHolder</string>
     <string name="description_placeholder">description PlaceHolder</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="description1">Blake’s Always Organic is based in The Food Hub, Drumshanbo, Co. Leitrim since 2012. </string>
+    <string name="description2">The company is focused only on certified Organic produce.</string>
+    <string name="description3">Sean McGloin became aware of the health benefits of the fermented milk kefir and was making kefir for his family before developing the product on a small commercial scale. \n Our current products are Organic Kefir, (a probiotic health drink for gut revitalisation made with whole organic milk.) and Whole-bean Artisan Organic coffees. </string>
+    <string name="description4">Hundreds of years ago kefir was found high in the Caucasus mountains villages of nomadic shepherds who had abnormally good health. \n Kefir originates in the Caucasus mountains. </string>
+    <string name="description5">On further research, they discovered that part of the diet was a milk product that was stored in bags or containers made from calf stomachs. \n While half the world was dying of malnutrition and disease, these shepherds and their families lived long healthy lives with little or no disease.</string>
+    <string name="description6">In 2016, Blakes Always Organic commenced selling “Feel Good” Organic Kefir. \n As temperatures rose the natural bacteria in the wall of the calf’s stomach bag impregnated the milk causing fermentation resulting in billions of good bacteria that was regular drank by the shepherds to achieve good health.</string>
+    <string name="description7">We had to move to a 200 litre vat within 3 months and in 2018 we had to purchase a 850 litre vat. \n Starting off, we made batches of kefir in a small 20 litre Bain Marie, which we bottled and labelled by hand.</string>
+    <string name="description8">Three years later, and our production scale has grown continuously to cater for the increasing demand as the undisputed health benefits of milk kefir is the main driver of sales. \n We currently produce around 1600 litres per week. The product proved to be very popular with our health conscious customers.</string>
 </resources>

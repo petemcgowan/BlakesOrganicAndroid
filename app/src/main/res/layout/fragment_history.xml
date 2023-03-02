@@ -2,14 +2,14 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:backgroundTint="@color/atn_off_white"
+    android:backgroundTint="@color/kh_off_white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     >
     <LinearLayout
         android:layout_width="match_parent"
-        android:background="@color/atn_off_white"
+        android:background="@color/kh_off_white"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:textColor="@color/atn_off_white"
+            android:textColor="@color/kh_off_white"
             android:backgroundTint="@color/atn_lightorange"
             android:background="@drawable/customborder"
             android:id="@+id/igView">
@@ -66,7 +66,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:backgroundTint="@color/atn_pink"
-            android:textColor="@color/atn_off_white"
+            android:textColor="@color/kh_off_white"
             android:background="@drawable/customborder"
             android:id="@+id/fbView">
 
@@ -117,7 +117,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:backgroundTint="@color/atn_darkorange"
-            android:textColor="@color/atn_off_white"
+            android:textColor="@color/kh_off_white"
             android:background="@drawable/customborder"
             android:id="@+id/wbView">
 
@@ -160,14 +160,126 @@
 
         </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:backgroundTint="@color/atn_off_white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:itemCount="8"
-        tools:listitem="@layout/card_cell" />
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description1"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage1"
+            android:src="@drawable/history_organic_coffee_beans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description2"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage2"
+            android:src="@drawable/history_lough_leitrim_boardwalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description3"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage3"
+            android:src="@drawable/history_lough_leitrim_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description4"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage4"
+            android:src="@drawable/history_glencar_waterfall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description5"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage5"
+            android:src="@drawable/history_sheep_shepard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description6"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage6"
+            android:src="@drawable/history_wooden_850_vat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description7"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/historyImage7"
+            android:src="@drawable/kefir_in_fridge_blakes_organic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cover"
+            />
+        <TextView
+            android:id="@+id/description8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description8"
+            android:textColor="@color/kh_mild_grey_text"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
