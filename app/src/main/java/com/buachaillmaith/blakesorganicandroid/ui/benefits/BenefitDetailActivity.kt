@@ -1,12 +1,12 @@
-package com.example.blakesorganicandroid.ui.benefits
+package com.buachaillmaith.blakesorganicandroid.ui.benefits
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.blakesorganicandroid.databinding.ActivityDetailBinding
-import com.example.blakesorganicandroid.ui.ITEM_ID_EXTRA
-import com.example.blakesorganicandroid.ui.DetailActivity
-import com.example.blakesorganicandroid.ui.Item
-import com.example.blakesorganicandroid.ui.benefitsList
+import com.buachaillmaith.blakesorganicandroid.databinding.ActivityDetailBinding
+import com.buachaillmaith.blakesorganicandroid.ui.ITEM_ID_EXTRA
+import com.buachaillmaith.blakesorganicandroid.ui.DetailActivity
+import com.buachaillmaith.blakesorganicandroid.ui.Item
+import com.buachaillmaith.blakesorganicandroid.ui.benefitsList
 
 
 class BenefitDetailActivity : AppCompatActivity()

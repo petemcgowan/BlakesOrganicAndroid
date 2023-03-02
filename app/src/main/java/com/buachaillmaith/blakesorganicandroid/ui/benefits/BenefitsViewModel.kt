@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid.ui.benefits
+package com.buachaillmaith.blakesorganicandroid.ui.benefits
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
