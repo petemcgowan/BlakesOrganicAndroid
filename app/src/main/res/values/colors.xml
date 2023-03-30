@@ -18,7 +18,11 @@
     <color name="atn_lightorange">#FC842D</color>
     <color name="atn_darkorange">#FC6A28</color>
     <color name="atn_pink">#FC6E8E</color>
-
+    <color name="kh_mauve">#493749</color>
+    <color name="kh_cream">#FDCDAA</color>
+    <color name="kh_mild_grey_text">#4A4A4A</color>
+    <color name="kh_off_white">#F8F8E7</color>
+    <color name="kh_off_white2">#F8E7E7</color>
 
     <color name="logo_brown_background1">#CA8D43</color>
     <color name="logo_brown_background2">#CB7444</color>
