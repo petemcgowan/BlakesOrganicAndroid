@@ -1,4 +1,4 @@
-package com.example.blakesorganicandroid.ui.stockists
+package com.buachaillmaith.blakesorganicandroid.ui.stockists
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
