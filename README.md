@@ -31,11 +31,3 @@ Blakes Organic is a meticulously crafted native Android application designed to 
 
 <div align="center">
 
-## Architecture
-
-</div>
-
-<!-- You can add the architecture diagram and other details below just like the Healthy readme -->
-
-<br>
-<br>
